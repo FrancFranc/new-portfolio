@@ -1,0 +1,86 @@
+*	{
+  width : 100%;
+    height: 100%;
+  padding : 0;
+  margin:  0;
+  box-sizing: border-box;
+}
+
+
+main {
+
+}
+main div {
+  height: 85%;
+}
+
+.background {
+  background-image: url('img/hong-kong.jpg');
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+.name {
+  font-size: 70px;
+  color: white;
+  height: 30%;
+  padding-top: 23%;
+
+  text-align: center;
+  position: relative;
+  z-index: 3
+}
+
+
+/* ----------------------------------------------------
+                        NAV BAR
+-------------------------------------------------------*/
+
+
+nav {
+  display: inline-block;
+  background-color: black;
+  position: relative;
+  height: 15%;
+  top:70%;
+  z-index: 5;
+}
+nav ul {
+  text-align: center;
+}
+
+li {
+  padding-top: 3px;
+  padding-bottom: 3px;
+  text-align: center;
+  font-size: 15px;
+  color: white;
+  list-style-type: none;
+  display: inline;
+}
+
+nav a {
+  font-size: 30px;
+  font-family: Century;
+}
+
+nav a:link {
+  color: white;
+  text-decoration: none;
+}
+
+nav a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+nav a:active {
+  color: white;
+  text-decoration: none;
+}
