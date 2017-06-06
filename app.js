@@ -11,10 +11,6 @@ function Lab(rawDataObj) {
 }
 
 
-
-
-Hamburger Menu
-
 $( "#cross" ).hide();
 $( "#menu" ).hide();
 
