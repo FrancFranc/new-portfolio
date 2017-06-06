@@ -1,6 +1,7 @@
 'use strict';
 
 var labData = [
+
   {
     labImage:         'img/gr.jpg',
     title:            'Guardians of Goats',
@@ -32,4 +33,5 @@ var labData = [
     description:      'xxxxx.',
     labURL:           'https://github.com/FrancFranc/SalmonCookies'
   }
+  
 ]

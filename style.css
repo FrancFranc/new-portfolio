@@ -19,7 +19,6 @@
   color: white;
   height: 30%;
   padding-top: 23%;
-
   text-align: center;
   position: relative;
   z-index: 3
@@ -39,6 +38,7 @@ nav {
   top:70%;
   z-index: 5;
 }
+
 nav ul {
   text-align: center;
 }
@@ -165,3 +165,19 @@ nav a:active {
   color:#666;
 }*/
 
+
+/* ----------------------------------------------------
+                   CONTACT
+-------------------------------------------------------*/
+
+.contact {
+  display: inline-block;
+  text-align: center;
+}
+
+.contact img {
+  width:auto;
+  height: auto;
+  padding-right: 5%;
+  padding-left: 5%;
+}
