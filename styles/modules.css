@@ -2,20 +2,9 @@
           HEADER (Big Image + "Evette Cheung")
 --------------------------------------------------*/
 
-/*.background {
-  height: 85%;
-  background-image: url('img/hong-kong.jpg');
-  background-size: 100% auto;
-  background-repeat: no-repeat;
-  z-index: 1;
-}*/
-
-
-
 .background {
   max-height:85%;
   position: relative;
-
 }
 
 .background img {
@@ -33,7 +22,6 @@
 }
 
 
-
 /*--------------------------------------------------
                  HAMBURGER MENU
 --------------------------------------------------*/
@@ -42,22 +30,15 @@
     color: white;
   }
 
-.icon-menu {
-
-}
-
-
-
-nav ul {
+/*nav ul {
   display: none;
   list-style: none;
   clear: both;
-}
+}*/
 
 nav:hover ul {
   display: block;
 }
-
 
 
 /*--------------------------------------------------
@@ -69,7 +50,7 @@ nav:hover ul {
     display: none;
   }
 
-nav {
+  nav {
     display: inline-block;
     background-color: black;
     position: relative;
@@ -77,6 +58,7 @@ nav {
     top:70%;
     z-index: 5;
   }
+
   nav ul {
     text-align: center;
   }
@@ -86,7 +68,6 @@ nav {
     padding-bottom: 3px;
     text-align: center;
     font-size: 15px;
-    color: white;
     list-style-type: none;
     display: inline;
   }
@@ -116,41 +97,36 @@ nav {
     color: white;
     text-decoration: none;
   }
-
 }
 
 /*--------------------------------------------------
                     LABS
 --------------------------------------------------*/
 
+#lab-all {
+  display: block;
+  text-align: center;
+  height: 85%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
 
-
-#labs img {
+#lab-all img {
   width: 30%;
   height: auto;
   padding-left: 3%;
   padding-right: 3%;
-
-
 }
 
-#labs {
-  display: block;
-  text-align: center;
-}
-
-.stockers {
-
-}
 
 /*--------------------------------------------------
                     CONTACT
 --------------------------------------------------*/
 
-
 .contact {
   display: block;
   text-align: center;
+  height: 85%;
 }
 
 .contact img {
