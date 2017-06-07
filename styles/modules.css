@@ -106,3 +106,18 @@ nav {
   }
 
 }
+
+/*--------------------------------------------------
+                    CONTACT
+--------------------------------------------------*/
+
+.contact a {
+ text-align: center;
+}
+
+.contact img {
+  width: auto;
+  height: auto;
+  padding-left: 3%;
+  padding-right: 3%;
+}
