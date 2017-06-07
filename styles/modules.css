@@ -2,21 +2,33 @@
           HEADER (Big Image + "Evette Cheung")
 --------------------------------------------------*/
 
-.background {
+/*.background {
   height: 85%;
   background-image: url('img/hong-kong.jpg');
   background-size: 100% auto;
   background-repeat: no-repeat;
   z-index: 1;
+}*/
+
+
+
+.background {
+  max-height:85%;
+  position: relative;
+
+}
+
+.background img {
+  position: absolute;
 }
 
 .name {
   font-size: 70px;
-  color: black;
+  color: white;
   height: 30%;
   padding-top: 23%;
   text-align: center;
-  position: relative;
+  position: absolute;
   z-index: 3;
 }
 
@@ -108,11 +120,37 @@ nav {
 }
 
 /*--------------------------------------------------
+                    LABS
+--------------------------------------------------*/
+
+
+
+#labs img {
+  width: 30%;
+  height: auto;
+  padding-left: 3%;
+  padding-right: 3%;
+
+
+}
+
+#labs {
+  display: block;
+  text-align: center;
+}
+
+.stockers {
+
+}
+
+/*--------------------------------------------------
                     CONTACT
 --------------------------------------------------*/
 
-.contact a {
- text-align: center;
+
+.contact {
+  display: block;
+  text-align: center;
 }
 
 .contact img {
