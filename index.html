@@ -7,6 +7,26 @@
   <link type="text/css" rel="stylesheet" href="styles/layout.css"/>
   <link type="text/css" rel="stylesheet" href="styles/modules.css"/>
   <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+  <script id="lab-template-images" type="text/x-handlebars-template">
+    <div id="lab-images" class="sub-content">
+      <h1>{{title}}</h1>
+    </div>
+  </script>
+
+  <script id="lab-template-content" type="text/x-handlebars-template">
+    <div id="each-lab" class="sub-content">
+      <div>
+        <img class="lab-image"/>
+      </div>
+      <div>
+        <p class="title">{{title}}</p>
+        <p class="year">{{year}}</p>
+        <p class="description">{{description}}</p>
+        <p class="lab-url">{{labURL}}</p>
+      </div>
+    </div>
+  </script>
 </head>
 
 <body>
