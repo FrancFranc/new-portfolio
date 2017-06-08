@@ -2,12 +2,12 @@
           HEADER (Big Image + "Evette Cheung")
 --------------------------------------------------*/
 
-.background {
+#background {
   max-height:85%;
   position: relative;
 }
 
-.background img {
+#background img {
   position: absolute;
 }
 
@@ -20,6 +20,24 @@
   position: absolute;
   z-index: 3;
 }
+
+
+/*--------------------------------------------------
+                   ABOUT ME
+--------------------------------------------------*/
+
+#about-me p {
+  width: 64%;
+  margin-left: 18%;
+}
+
+#about-me img {
+  width: auto;
+  height: auto;
+  float: left;
+  margin-right: 5%;
+}
+
 
 
 /*--------------------------------------------------
@@ -106,9 +124,6 @@ nav:hover ul {
 #lab-all {
   display: block;
   text-align: center;
-  height: 85%;
-  padding-top: 5%;
-  padding-bottom: 5%;
 }
 
 #lab-all img {
@@ -123,13 +138,12 @@ nav:hover ul {
                     CONTACT
 --------------------------------------------------*/
 
-.contact {
+#contact {
   display: block;
   text-align: center;
-  height: 85%;
 }
 
-.contact img {
+#contact img {
   width: auto;
   height: auto;
   padding-left: 3%;

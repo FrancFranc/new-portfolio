@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 
   <script id="lab-content" type="text/x-handlebars-template">
-    <div id="lab-individual">
+    <div id="lab-individual" class="tab-content">
       <div>
         <img class="lab-image"/>
       </div>
@@ -29,7 +29,7 @@
 
   <main>
 
-    <div class="background">
+    <div id="background">
       <img src="img/hong-kong.jpg"/>
       <p class="name"> Evette Cheung </p>
     </div>
@@ -37,21 +37,23 @@
     <nav id="main-nav">
       <div class="icon-menu"><i class="fa fa-angle-double-up" aria-hidden="true"></i></div>
       <ul>
-        <li class="tab" data-content="homepage"><a href="#"> Home </a></li>
-        <li class="tab" data-content="about-me"><a href="#"> About Me</a></li>
-        <li class="tab" data-content="all-labs"><a href="#"> Lab </a></li>
-        <li class="tab" data-content="contact"><a href="#"> Contact </a></li>
+        <li class="tab" data-content="background"><a href="#background"> Home </a></li>
+        <li class="tab" data-content="about-me"><a href="#about-me"> About Me</a></li>
+        <li class="tab" data-content="lab-all"><a href="#lab-all"> Lab </a></li>
+        <li class="tab" data-content="contact"><a href="#contact"> Contact </a></li>
       </ul>
     </nav>
 
-    <div id="lab-all">
+    <div id="about-me" class="tab-content">
+      <p> <img src="img/evette.png"/> WASHINGTON (AP) — President Donald Trump surprised Washington on Wednesday with his choice to replace James Comey a day ahead of the ousted FBI director’s blockbuster congressional testimony, tapping a white-collar defense lawyer with strong law enforcement background. Senate Republicans and some Democrats praised the nomination. <br /> In an early morning two-sentence tweet, Trump said he intended to nominate Christopher Wray, a high-ranking official in George W. Bush’s Justice Department who represented New Jersey Gov. Chris Christie in the Bridgegate scandal. </p>
+    </div>
+
+    <div id="lab-all" class="tab-content">
       <img class="gg" src="img/GG-snapshot.jpg"/>
       <img class="stockers" src="img/stockers-snapshot.jpg"/>
     </div>
 
-
-
-    <div class="contact">
+    <div id="contact" class="tab-content">
       <a href="https://github.com/FrancFranc"><img src="img/github-1.png"/></a>
       <a href="https://www.linkedin.com/in/evette-cheung-83753a124"><img src="img/linkedin-1.png"/></a>
       <a href="https://twitter.com/Evette__C"><img src="img/twitter-1.png"/></a>
@@ -62,9 +64,12 @@
 
 <!-- Script Links -->
   <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.compatibility.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.4/handlebars.js"></script>
-  <script type="text/javascript" src="labArray.js"></script>
-  <script type="text/javascript" src="lab.js"></script>
+  <script type="text/javascript" src="scripts/jquery.easing.1.3.js"></script>
+  <script type="text/javascript" src="scripts/view.js"></script>
+  <script type="text/javascript" src="scripts/app.js"></script>
+  <script type="text/javascript" src="scripts/rawData.js"></script>
 
 </body>
 
