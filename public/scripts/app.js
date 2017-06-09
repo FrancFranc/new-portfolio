@@ -27,11 +27,12 @@ Lab.prototype.toHTML = function() {
 function handleShowLabs() {
   $.getJSON('scripts/rawData.json')
   .then(
-    function(data) {
-      return labArray.map(function(data) {
-        return data.labImage;
-      })
-
+    function newLabArray(data) {
+      return labArray.map((labObject) => new Lab(labObject));
+      return $('#lab-individuals').append(labObject.toHtml());
+      });
+    }
+  ,
 
       // data.forEach(function(labObject) {
       //   labArray.push(new Lab(labObject));
@@ -39,8 +40,6 @@ function handleShowLabs() {
       // data.forEach(function(labObject){
       //   $('#lab-individuals').append(labObject.toHtml());
       // });
-    },
-
     function(err) {
       console.error(err);
     });
