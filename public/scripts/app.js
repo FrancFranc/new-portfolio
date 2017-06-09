@@ -28,11 +28,16 @@ function handleShowLabs() {
   $.getJSON('scripts/rawData.json')
   .then(
     function newLabArray(data) {
-      return labArray.map((labObject) => new Lab(labObject));
-      return $('#lab-individuals').append(labObject.toHtml());
-      });
-    }
-  ,
+      return labArray.map(function(labObject) {
+        return (new Lab(labObject));
+        $('#lab-individuals').append(labObject.toHtml());
+      }
+      .reduce(function(prev,curr){
+        return [prev,curr.title];
+      }, ['Projects:']);
+    })
+  );
+},
 
       // data.forEach(function(labObject) {
       //   labArray.push(new Lab(labObject));
