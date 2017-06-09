@@ -14,11 +14,31 @@ Lab.prototype.toHTML = function() {
   var template = Handlebars.compile($('#lab-content').html());
   return template(this);
 }
+//
+// labData.forEach(function(labObject) {
+//   labArray.push(new Lab(labObject));
+// });
+//
+// labArray.forEach(function(labObject) {
+//   $('#lab-individuals').append(labObject.toHTML());
+// });
 
-labData.forEach(function(labObject) {
-  labArray.push(new Lab(labObject));
-});
 
-labArray.forEach(function(labObject) {
-  $('#lab-individuals').append(labObject.toHTML());
-});
+function handleShowLabs() {
+  $.getJSON('data/rawData.json')
+  .then(
+    function(data) {
+      data.forEach(function(labObject) {
+        labArray.push(new Lab(labObject));
+      });
+      data.forEach(function(labObject){
+        $('#lab-individuals').append(labObject.toHtml());
+      });
+    },
+
+    function(err) {
+      console.error(err);
+    });
+}
+
+handleShowLabs();
