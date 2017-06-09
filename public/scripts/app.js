@@ -25,17 +25,26 @@ Lab.prototype.toHTML = function() {
 
 
 function handleShowLabs() {
-  $.getJSON('data/rawData.json')
+  $.getJSON('scripts/rawData.json')
   .then(
-    function(data) {
-      data.forEach(function(labObject) {
-        labArray.push(new Lab(labObject));
-      });
-      data.forEach(function(labObject){
+    function newLabArray(data) {
+      return labArray.map(function(labObject) {
+        return (new Lab(labObject));
         $('#lab-individuals').append(labObject.toHtml());
-      });
-    },
+      }
+      .reduce(function(prev,curr){
+        return [prev,curr.title];
+      }, ['Projects:']);
+    })
+  );
+},
 
+      // data.forEach(function(labObject) {
+      //   labArray.push(new Lab(labObject));
+      // });
+      // data.forEach(function(labObject){
+      //   $('#lab-individuals').append(labObject.toHtml());
+      // });
     function(err) {
       console.error(err);
     });
