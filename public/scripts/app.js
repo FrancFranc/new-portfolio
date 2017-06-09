@@ -25,15 +25,20 @@ Lab.prototype.toHTML = function() {
 
 
 function handleShowLabs() {
-  $.getJSON('data/rawData.json')
+  $.getJSON('scripts/rawData.json')
   .then(
     function(data) {
-      data.forEach(function(labObject) {
-        labArray.push(new Lab(labObject));
-      });
-      data.forEach(function(labObject){
-        $('#lab-individuals').append(labObject.toHtml());
-      });
+      return labArray.map(function(data) {
+        return data.labImage;
+      })
+
+
+      // data.forEach(function(labObject) {
+      //   labArray.push(new Lab(labObject));
+      // });
+      // data.forEach(function(labObject){
+      //   $('#lab-individuals').append(labObject.toHtml());
+      // });
     },
 
     function(err) {
